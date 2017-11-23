@@ -1,0 +1,1 @@
+# Euromoney.QARecruitmentTest
