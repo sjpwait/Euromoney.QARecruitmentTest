@@ -10,6 +10,7 @@ Using C# write automated functional tests for the following user stories using S
 - The site to test is http://www.euromoneyplc.com/
 - Selenium Webdriver and NUnit must be used via Nuget packages.
 - Other useful Nuget libraries may also be used.
+- We have created blunk project with all Nuget packeges inside, so fill free to fork it. 
 - Any browser can be used for the purpose of this task.
 
 
@@ -25,7 +26,7 @@ So that **we can see that the correct page is displayed**
 #### Acceptance criteria
 
 - Management team page is displayed correctly
-- Verify that the URL of the first image is present.
+- Verify that all teammembers have Name, Job Title, Picture and description.
 
 
 ---
