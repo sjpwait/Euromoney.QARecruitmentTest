@@ -66,6 +66,7 @@
     <Compile Include="BrowserContext.cs" />
     <Compile Include="BrowserStepsBase.cs" />
     <Compile Include="GenericSteps.cs" />
+    <Compile Include="IjglobalSteps.cs" />
     <Compile Include="ManagementTeamContext.cs" />
     <Compile Include="ManagementTeamSteps.cs" />
     <Compile Include="PageObjects\BasePage.cs" />
@@ -73,10 +74,16 @@
     <Compile Include="PageObjects\HomePage.cs" />
     <Compile Include="PageObjects\MainPage.cs" />
     <Compile Include="PageObjects\ManagementTeamPage.cs" />
+    <Compile Include="PageObjects\PricingDataAndMarketIntelligencePage.cs" />
     <Compile Include="Story1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Story1.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Story2.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Story2.feature</DependentUpon>
     </Compile>
     <Compile Include="TeamMember.cs" />
     <Compile Include="UiTests.cs" />
@@ -88,6 +95,10 @@
     <None Include="Story1.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Story1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Story2.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Story2.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

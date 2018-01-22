@@ -30,5 +30,13 @@ namespace EMQARecruitmentTest.PageObjects
             var managementTeam = whoWeAre.OpenManagementTeam();
             return new ManagementTeamPage(Driver);
         }
+
+        internal PricingDataAndMarketIntelligencePage OpenPricingDataAndMarketIntelligencePage()
+        {
+            var menu = OpenMenu();
+            var ourPortfolio = menu.OpenOurPortfolio();
+            var pdmi = ourPortfolio.OpenPricingDataAndMarketIntelligence();
+            return new PricingDataAndMarketIntelligencePage(Driver);
+        }
     }
 }

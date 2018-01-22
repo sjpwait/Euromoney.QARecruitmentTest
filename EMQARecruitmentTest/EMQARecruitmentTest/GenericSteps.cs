@@ -5,6 +5,7 @@ using TechTalk.SpecFlow;
 using OpenQA.Selenium.Firefox;
 using EMQARecruitmentTest.PageObjects;
 using FluentAssertions;
+using System.Linq;
 
 namespace EMQARecruitmentTest
 {
@@ -34,7 +35,6 @@ namespace EMQARecruitmentTest
         {
             var homePage = new HomePage(BrowserContext.Browser);
             homePage.OpenManagementTeamPage();
-
         }
 
         [Then(@"we are taken to the correct page")]
@@ -43,7 +43,14 @@ namespace EMQARecruitmentTest
             BrowserContext.Browser.Url.Should().Be("http://www.euromoneyplc.com/who-we-are/management-team");
         }
 
-        
+        [When(@"I Navigate to IJ Global Page")]
+        public void WhenINavigateToIJGlobalPage()
+        {
+            var homePage = new HomePage(BrowserContext.Browser);
+            var pdmiPage = homePage.OpenPricingDataAndMarketIntelligencePage();
+            pdmiPage.ClickLink("Visit IJ Global", true);
+        }
+
 
     }
 }
